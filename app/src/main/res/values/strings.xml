@@ -1,0 +1,21 @@
+<resources>
+    //App Name
+    <string name="app_name">Cense</string>
+
+    //Bottom Navigation Menu
+    <string name="bottom_nav_study">Study</string>
+    <string name="bottom_nav_classes">Classes</string>
+    <string name="bottom_nav_ai">AI</string>
+    <string name="bottom_nav_settings">Settings</string>
+
+    //Classes
+    <string name="classes_title">Classes</string>
+    <string name="classes_english">English</string>
+    <string name="classes_math">Math</string>
+    <string name="classes_science">Science</string>
+    <string name="classes_history">History</string>
+    <string name="classes_biology">Biology</string>
+    <string name="classes_psychology">Psychology</string>
+    
+
+</resources>

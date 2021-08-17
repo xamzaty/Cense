@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FFFF</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="green">#88CF5D</color>
+
+    //Classes colors
+    <color name="classes_english">#88CF5D</color>
+    <color name="classes_maths">#27E895</color>
+    <color name="classes_science">#82DA1F</color>
+    <color name="classes_history">#FFBA02</color>
+    <color name="classes_biology">#FA6C1D</color>
+    <color name="classes_psychology">#BD7AFF</color>
+
+    <color name="classes_rating">#FFCE22</color>
+
+</resources>
