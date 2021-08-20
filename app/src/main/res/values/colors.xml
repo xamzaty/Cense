@@ -8,9 +8,12 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     <color name="green">#88CF5D</color>
+    <color name="green_200">#C5E1A5</color>
+    <color name="green_500">#8BC34A</color>
+    <color name="green_700">#689F38</color>
 
     //Classes colors
-    <color name="classes_english">#88CF5D</color>
+    <color name="classes_english">#00C4FF</color>
     <color name="classes_maths">#27E895</color>
     <color name="classes_science">#82DA1F</color>
     <color name="classes_history">#FFBA02</color>

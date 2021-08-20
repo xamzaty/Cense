@@ -1,16 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <item android:id="@+id/study_item"
-        android:title="@string/bottom_nav_study"/>
+    <item android:id="@+id/fragment_study"
+        android:title="@string/bottom_nav_study"
+        android:icon="@drawable/ic_icon_study" />
 
-    <item android:id="@+id/classes_item"
-        android:title="@string/bottom_nav_classes"/>
+    <item android:id="@+id/fragment_classes"
+        android:title="@string/bottom_nav_classes"
+        android:icon="@drawable/ic_icon_classes" />
 
-    <item android:id="@+id/ai_item"
-        android:title="@string/bottom_nav_ai"/>
+    <item android:id="@+id/fragment_bonuses"
+        android:title="@string/bottom_nav_bonuses"
+        android:icon="@drawable/ic_icon_bonuses" />
 
-    <item android:id="@+id/settings_item"
-        android:title="@string/bottom_nav_settings"/>
+    <item android:id="@+id/fragment_settings"
+        android:title="@string/bottom_nav_settings"
+        android:icon="@drawable/ic_icon_settings" />
 
 </menu>

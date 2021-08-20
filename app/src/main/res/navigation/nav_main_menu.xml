@@ -1,11 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_main_menu"
-    app:startDestination="@id/classesFragment">
+    app:startDestination="@id/fragment_classes">
 
     <fragment
-        android:id="@+id/classesFragment"
+        android:id="@+id/fragment_classes"
         android:name="com.cense.view.ClassesFragment"
-        android:label="ClassesFragment" />
+        android:label="Classes"
+        tools:layout="@layout/fragment_classes"/>
+    <fragment
+        android:id="@+id/fragment_study"
+        android:name="com.cense.view.StudyFragment"
+        android:label="Study"
+        tools:layout="@layout/fragment_study"/>
+    <fragment
+        android:id="@+id/fragment_bonuses"
+        android:name="com.cense.view.BonusesFragment"
+        android:label="Bonuses"
+        tools:layout="@layout/fragment_bonuses"/>
+    <fragment
+        android:id="@+id/fragment_settings"
+        android:name="com.cense.view.SettingsFragment"
+        android:label="Settings"
+        tools:layout="@layout/fragment_settings"/>
 </navigation>

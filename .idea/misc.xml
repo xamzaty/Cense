@@ -4,18 +4,25 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="app/src/main/res/drawable/circle.xml" value="0.15260416666666668" />
+        <entry key="app/src/main/res/drawable/ic_icon_bonuses.xml" value="0.3234375" />
+        <entry key="app/src/main/res/drawable/ic_icon_classes.xml" value="0.3234375" />
+        <entry key="app/src/main/res/drawable/ic_icon_settings.xml" value="0.3234375" />
+        <entry key="app/src/main/res/drawable/ic_icon_study.xml" value="0.3234375" />
+        <entry key="app/src/main/res/drawable/shape_rounded_rectangle.xml" value="0.3770833333333333" />
         <entry key="app/src/main/res/font/montserrat_semibold.xml" value="0.1" />
         <entry key="app/src/main/res/layout/activity_enter.xml" value="0.13645833333333332" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.12239583333333333" />
-        <entry key="app/src/main/res/layout/activity_menu.xml" value="0.13645833333333332" />
+        <entry key="app/src/main/res/layout/activity_menu.xml" value="0.25" />
         <entry key="app/src/main/res/layout/fragment_ai.xml" value="0.13645833333333332" />
-        <entry key="app/src/main/res/layout/fragment_classes.xml" value="0.13645833333333332" />
+        <entry key="app/src/main/res/layout/fragment_classes.xml" value="0.25" />
         <entry key="app/src/main/res/layout/fragment_enter.xml" value="0.13645833333333332" />
-        <entry key="app/src/main/res/layout/fragment_login.xml" value="0.13645833333333332" />
-        <entry key="app/src/main/res/layout/fragment_run_out_of_credits.xml" value="0.137258108257135" />
-        <entry key="app/src/main/res/layout/fragment_settings.xml" value="0.13645833333333332" />
+        <entry key="app/src/main/res/layout/fragment_login.xml" value="0.165" />
+        <entry key="app/src/main/res/layout/fragment_run_out_of_credits.xml" value="0.165" />
+        <entry key="app/src/main/res/layout/fragment_settings.xml" value="0.25" />
         <entry key="app/src/main/res/layout/fragment_study.xml" value="0.13645833333333332" />
-        <entry key="app/src/main/res/menu/menu_bottom_navigation.xml" value="0.13645833333333332" />
+        <entry key="app/src/main/res/layout/fragment_test_detail.xml" value="0.3609375" />
+        <entry key="app/src/main/res/layout/item_dropdown_time.xml" value="0.24365942028985507" />
+        <entry key="app/src/main/res/menu/menu_bottom_navigation.xml" value="0.5376163046000323" />
       </map>
     </option>
   </component>

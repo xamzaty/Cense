@@ -20,14 +20,16 @@
     <com.tbuonomo.morphbottomnavigation.MorphBottomNavigationView
         android:id="@+id/bottomNavigationView"
         android:layout_width="match_parent"
+        app:itemIconTint="@color/white"
+        app:itemTextColor="@color/white"
         android:layout_height="wrap_content"
-        app:backgroundTint="@color/purple_500"
+        app:backgroundTint="@color/green_500"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:menu="@menu/menu_bottom_navigation"
-        app:morphCornerRadius="128dp"
-        app:morphItemRadius="64dp"
-        app:morphVerticalOffset="8dp" />
+        app:morphCornerRadius="220dp"
+        app:morphItemRadius="120dp"
+        app:morphVerticalOffset="1dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

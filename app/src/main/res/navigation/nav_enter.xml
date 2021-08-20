@@ -1,11 +1,38 @@
 <?xml version="1.0" encoding="utf-8"?>
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_graph"
     app:startDestination="@id/enterFragment">
 
     <fragment
         android:id="@+id/enterFragment"
         android:name="com.cense.view.EnterFragment"
-        android:label="Enter" />
+        android:label="Enter"
+        tools:layout="@layout/fragment_enter">
+        <action
+            android:id="@+id/action_enterFragment_to_loginFragment"
+            app:destination="@id/loginFragment"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"/>
+        <action
+            android:id="@+id/action_enterFragment_to_runOutOfCreditsFragment"
+            app:destination="@id/runOutOfCreditsFragment"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"/>
+    </fragment>
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.cense.view.LoginFragment"
+        android:label="Login as a Parent"
+        tools:layout="@layout/fragment_login"/>
+    <fragment
+        android:id="@+id/runOutOfCreditsFragment"
+        android:name="com.cense.view.RunOutOfCreditsFragment"
+        android:label="Run Out of Credits"
+        tools:layout="@layout/fragment_run_out_of_credits"/>
 </navigation>

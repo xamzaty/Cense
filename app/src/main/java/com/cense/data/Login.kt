@@ -1,4 +1,4 @@
-package com.cense.models
+package com.cense.data
 
 import com.google.gson.annotations.Expose
 import com.google.gson.annotations.SerializedName

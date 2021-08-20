@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
     //App Name
     <string name="app_name">Cense</string>
@@ -12,7 +13,7 @@
     //Bottom Navigation Menu
     <string name="bottom_nav_study">Study</string>
     <string name="bottom_nav_classes">Classes</string>
-    <string name="bottom_nav_bonuses">Bonuses</string>
+    <string name="bottom_nav_ai">AI</string>
     <string name="bottom_nav_settings">Settings</string>
 
     //Classes
@@ -24,20 +25,5 @@
     <string name="classes_biology">Biology</string>
     <string name="classes_psychology">Psychology</string>
     <string name="learn_more_to_unlock_your_phone">Learn More\n To unlock your phone</string>
-
-    //Alert Dialog
-    <string name="alert_title">Exit</string>
-    <string name="alert_are_you_want_to_exit">Are you want to exit?</string>
-    <string name="alert_ok">OK</string>
-    <string name="alert_cancel">Cancel</string>
-
-    //Settings
-    <string name="choose_time_spinner">Choose Time</string>
-    <string-array name="choose_time">
-        <item>15 minutes</item>
-        <item>30 minutes</item>
-        <item>45 minutes</item>
-        <item>60 minutes</item>
-    </string-array>
 
 </resources>

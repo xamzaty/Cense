@@ -11,6 +11,7 @@ import android.view.View
 import android.view.inputmethod.InputMethodManager
 import android.widget.Toast
 import androidx.annotation.ColorInt
+import androidx.fragment.app.Fragment
 
 object ViewExtensions {
 
@@ -21,6 +22,10 @@ object ViewExtensions {
 
     fun View.hide() {
         visibility = View.GONE
+    }
+
+    fun Fragment.hide() {
+        hide()
     }
 
     fun showGroupViews(vararg view: View) = view.forEach { it.show() }
