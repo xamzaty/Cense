@@ -104,6 +104,9 @@ dependencies {
 
     //Bottom Nav View
     implementation "com.tbuonomo:morph-bottom-navigation:$bot_nav_version"
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.3.61"
+
+    implementation 'com.redmadrobot:input-mask-android:6.0.0'
 
     implementation 'androidx.core:core-ktx:1.6.0'
     implementation 'androidx.appcompat:appcompat:1.3.1'

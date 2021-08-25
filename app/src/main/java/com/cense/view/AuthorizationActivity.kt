@@ -8,17 +8,14 @@ import androidx.navigation.fragment.findNavController
 import androidx.navigation.ui.setupActionBarWithNavController
 import com.cense.R
 import com.cense.base.BaseActivity
-import com.cense.databinding.ActivityEnterBinding
-import dagger.hilt.android.AndroidEntryPoint
+import com.cense.databinding.ActivityAuthorizationBinding
 
-@AndroidEntryPoint
-class EnterActivity : BaseActivity<ActivityEnterBinding>(ActivityEnterBinding::inflate) {
+class AuthorizationActivity : BaseActivity<ActivityAuthorizationBinding>(ActivityAuthorizationBinding::inflate) {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
         AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO)
-        supportActionBar?.hide()
 
         navBarOptions()
 

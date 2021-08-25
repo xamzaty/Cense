@@ -1,4 +1,5 @@
 <resources>
+
     //App Name
     <string name="app_name">Cense</string>
 
@@ -16,28 +17,52 @@
     <string name="bottom_nav_settings">Settings</string>
 
     //Classes
-    <string name="classes_title">Classes</string>
+    <string name="classes_title">CLASSES</string>
     <string name="classes_english">English</string>
     <string name="classes_math">Math</string>
     <string name="classes_science">Science</string>
     <string name="classes_history">History</string>
+    <string name="classes_random">Random</string>
     <string name="classes_biology">Biology</string>
     <string name="classes_psychology">Psychology</string>
     <string name="learn_more_to_unlock_your_phone">Learn More\n To unlock your phone</string>
 
     //Alert Dialog
     <string name="alert_title">Exit</string>
-    <string name="alert_are_you_want_to_exit">Are you want to exit?</string>
+    <string name="alert_are_you_want_to_exit">Are you sure you want to exit?</string>
     <string name="alert_ok">OK</string>
     <string name="alert_cancel">Cancel</string>
 
     //Settings
     <string name="choose_time_spinner">Choose Time</string>
+    <string name="submit">Submit</string>
     <string-array name="choose_time">
-        <item>15 minutes</item>
+        <item>10 minutes</item>
+        <item>20 minutes</item>
         <item>30 minutes</item>
-        <item>45 minutes</item>
+        <item>40 minutes</item>
+        <item>50 minutes</item>
         <item>60 minutes</item>
     </string-array>
+    <string-array name="choose_class">
+        <item>English</item>
+        <item>Math</item>
+        <item>Science</item>
+        <item>Random</item>
+    </string-array>
+    <string-array name="choose_number_of_questions">
+        <item>5 answers</item>
+        <item>10 answers</item>
+        <item>15 answers</item>
+        <item>20 answers</item>
+    </string-array>
+    <string name="settings_class">Class</string>
+    <string name="settings_target_tag">Target Tag</string>
+    <string name="hint_timeout_select">SET THE SCREEN TIME LIMIT</string>
+    <string name="timeout_description">This allows you to limit the time your children spend in their phone without interruption. After the limit is reached, the app will suggest your child to study a bit to get more screen time.</string>
+    <string name="send_next_sms_in">Send next SMS-code in</string>
+
+    //New Parent Password Dialog
+    <string name="new_password_description">Create a four-character password to log into the parent\'s account hidden from the child</string>
 
 </resources>

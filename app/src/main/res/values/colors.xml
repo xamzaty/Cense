@@ -8,9 +8,13 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     <color name="green">#88CF5D</color>
-    <color name="green_200">#C5E1A5</color>
-    <color name="green_500">#8BC34A</color>
-    <color name="green_700">#689F38</color>
+    <color name="green_200">#A5D6A7</color>
+    <color name="green_500">#4CAF50</color>
+    <color name="green_700">#388E3C</color>
+    <color name="red">#FF0000</color>
+    <color name="gray">#F2F7F8</color>
+    <color name="progress_bar_green">#82DA1F</color>
+
 
     //Classes colors
     <color name="classes_english">#00C4FF</color>

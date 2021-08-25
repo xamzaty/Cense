@@ -3,24 +3,44 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="../../../../layout/custom_preview.xml" value="0.2638888888888889" />
         <entry key="app/src/main/res/drawable/circle.xml" value="0.15260416666666668" />
+        <entry key="app/src/main/res/drawable/circle_shape.xml" value="0.20520833333333333" />
+        <entry key="app/src/main/res/drawable/circular_progress_bar.xml" value="0.20520833333333333" />
+        <entry key="app/src/main/res/drawable/correct_option_border_bg.xml" value="0.3558974358974359" />
+        <entry key="app/src/main/res/drawable/default_option_border_bg.xml" value="0.3558974358974359" />
         <entry key="app/src/main/res/drawable/ic_icon_bonuses.xml" value="0.3234375" />
         <entry key="app/src/main/res/drawable/ic_icon_classes.xml" value="0.3234375" />
+        <entry key="app/src/main/res/drawable/ic_icon_random.xml" value="0.22592592592592592" />
         <entry key="app/src/main/res/drawable/ic_icon_settings.xml" value="0.3234375" />
         <entry key="app/src/main/res/drawable/ic_icon_study.xml" value="0.3234375" />
+        <entry key="app/src/main/res/drawable/round_corner_dialog.xml" value="0.321875" />
+        <entry key="app/src/main/res/drawable/selected_option_border_bg.xml" value="0.3558974358974359" />
         <entry key="app/src/main/res/drawable/shape_rounded_rectangle.xml" value="0.3770833333333333" />
         <entry key="app/src/main/res/font/montserrat_semibold.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/activity_authorization.xml" value="0.21195652173913043" />
         <entry key="app/src/main/res/layout/activity_enter.xml" value="0.13645833333333332" />
+        <entry key="app/src/main/res/layout/activity_login.xml" value="0.2671875" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.12239583333333333" />
         <entry key="app/src/main/res/layout/activity_menu.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/activity_splash.xml" value="0.2671875" />
+        <entry key="app/src/main/res/layout/dialog_new_parent_password.xml" value="0.21195652173913043" />
+        <entry key="app/src/main/res/layout/dialog_parent_password.xml" value="0.2671875" />
+        <entry key="app/src/main/res/layout/dialog_send_sms.xml" value="0.30572916666666666" />
         <entry key="app/src/main/res/layout/fragment_ai.xml" value="0.13645833333333332" />
+        <entry key="app/src/main/res/layout/fragment_authorization.xml" value="0.2671875" />
+        <entry key="app/src/main/res/layout/fragment_bonuses.xml" value="0.30572916666666666" />
         <entry key="app/src/main/res/layout/fragment_classes.xml" value="0.25" />
-        <entry key="app/src/main/res/layout/fragment_enter.xml" value="0.13645833333333332" />
-        <entry key="app/src/main/res/layout/fragment_login.xml" value="0.165" />
+        <entry key="app/src/main/res/layout/fragment_enter.xml" value="0.2589695225046486" />
+        <entry key="app/src/main/res/layout/fragment_login.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/fragment_quiz.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/fragment_registration.xml" value="0.21195652173913043" />
         <entry key="app/src/main/res/layout/fragment_run_out_of_credits.xml" value="0.165" />
         <entry key="app/src/main/res/layout/fragment_settings.xml" value="0.25" />
-        <entry key="app/src/main/res/layout/fragment_study.xml" value="0.13645833333333332" />
-        <entry key="app/src/main/res/layout/fragment_test_detail.xml" value="0.3609375" />
+        <entry key="app/src/main/res/layout/fragment_study.xml" value="0.23707211192525054" />
+        <entry key="app/src/main/res/layout/fragment_test_detail.xml" value="0.3636654240852723" />
+        <entry key="app/src/main/res/layout/item_dropdown_classes.xml" value="0.21195652173913043" />
+        <entry key="app/src/main/res/layout/item_dropdown_questions.xml" value="0.21195652173913043" />
         <entry key="app/src/main/res/layout/item_dropdown_time.xml" value="0.24365942028985507" />
         <entry key="app/src/main/res/menu/menu_bottom_navigation.xml" value="0.5376163046000323" />
       </map>

@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="40dp">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Enter SMS-code"
+            android:gravity="center"
+            android:textSize="25sp"
+            android:textColor="@color/green_500"/>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/edit_text_number_one"
+            android:gravity="center"
+            android:backgroundTint="@color/green_500"
+            android:hint="*"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:maxLength="1"
+            android:maxLines="1"
+            android:inputType="number"/>
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/edit_text_number_two"
+            android:layout_width="30dp"
+            android:hint="*"
+            android:backgroundTint="@color/green_500"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            android:maxLength="1"
+            android:maxLines="1"
+            android:inputType="number"/>
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/edit_text_number_three"
+            android:layout_width="30dp"
+            android:hint="*"
+            android:backgroundTint="@color/green_500"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            android:maxLength="1"
+            android:maxLines="1"
+            android:inputType="number"/>
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/edit_text_number_four"
+            android:layout_width="30dp"
+            android:hint="*"
+            android:backgroundTint="@color/green_500"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            android:maxLength="1"
+            android:maxLines="1"
+            android:inputType="number"/>
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/edit_text_number_five"
+            android:layout_width="30dp"
+            android:hint="*"
+            android:backgroundTint="@color/green_500"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            android:maxLength="1"
+            android:maxLines="1"
+            android:inputType="number"/>
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/edit_text_number_six"
+            android:layout_width="30dp"
+            android:hint="*"
+            android:backgroundTint="@color/green_500"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            android:maxLength="1"
+            android:maxLines="1"
+            android:inputType="number"/>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/text_view_next_sms"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/send_next_sms_in"
+            android:textSize="13sp"
+            android:layout_gravity="center"
+            android:gravity="center" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/button_send_sms"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:visibility="gone"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/shape_rounded_rectangle"
+            android:gravity="center"
+            android:backgroundTint="@color/green_500"
+            android:layout_gravity="center"
+            android:text="Send new SMS"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:fontFamily="sans-serif-medium"/>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

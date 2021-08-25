@@ -9,7 +9,15 @@
         android:id="@+id/fragment_classes"
         android:name="com.cense.view.ClassesFragment"
         android:label="Classes"
-        tools:layout="@layout/fragment_classes"/>
+        tools:layout="@layout/fragment_classes">
+        <action
+            android:id="@+id/action_fragment_classes_to_quizFragment"
+            app:destination="@id/quizFragment"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"/>
+    </fragment>
     <fragment
         android:id="@+id/fragment_study"
         android:name="com.cense.view.StudyFragment"
@@ -25,4 +33,13 @@
         android:name="com.cense.view.SettingsFragment"
         android:label="Settings"
         tools:layout="@layout/fragment_settings"/>
+    <fragment
+        android:id="@+id/quizFragment"
+        android:name="com.cense.view.QuizFragment"
+        android:label="Quiz"
+        tools:layout="@layout/fragment_quiz" >
+        <argument
+            android:name="className"
+            app:argType="string" />
+    </fragment>
 </navigation>

@@ -40,8 +40,15 @@ class MainMenuActivity : BaseActivity<ActivityMenuBinding>(ActivityMenuBinding::
         )
         setupActionBarWithNavController(navController, appBarConfiguration)
         bottomNavView.setupWithNavController(navController)
+        bottomNavView.menu.removeItem(R.id.fragment_bonuses)
 
-//        hideBottomMenu()
+        val bundle :Bundle ?=intent.extras
+        val sessionId = bundle!!.getString("parent")
+
+        if(sessionId != "parent") {
+            bottomNavView.menu.removeItem(R.id.fragment_settings)
+        }
+        hideBottomMenu()
     }
 
     private fun hideBottomMenu() {

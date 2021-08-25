@@ -1,12 +1,12 @@
 package com.cense.view
 
+import android.app.ActivityOptions
 import android.content.Intent
 import android.os.Bundle
 import android.view.View
-import com.cense.R
 import com.cense.base.BaseFragment
 import com.cense.databinding.FragmentEnterBinding
-import com.cense.utils.FragmentExtensions.nextFragment
+import com.cense.utils.Constants
 import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint
@@ -23,10 +23,16 @@ class EnterFragment : BaseFragment<FragmentEnterBinding>(FragmentEnterBinding::i
         with(binding) {
 
             buttonParent.setOnClickListener {
-                nextFragment(R.id.action_enterFragment_to_loginFragment)
+                if (Constants.User.PARENT_PASSWORD.length < 3) {
+                    NewParentPasswordDialog().show(childFragmentManager, "NewParentPasswordDialog")
+                } else {
+                    ParentPasswordDialog().show(childFragmentManager, "ParentPasswordDialogFragment")
+                }
             }
             buttonStartLearning.setOnClickListener {
-                startActivity(Intent(activity, MainMenuActivity::class.java))
+                val intent = Intent(context, MainMenuActivity::class.java)
+                intent.putExtra("child", "child")
+                startActivity(intent, ActivityOptions.makeSceneTransitionAnimation(activity).toBundle())
             }
         }
     }
