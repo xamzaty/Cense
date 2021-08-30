@@ -4,7 +4,7 @@
     android:padding="14dp"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:text="Choose Class"
+    android:text="@string/choose_class_spinner"
     android:textColor="@color/black"
     android:textSize="20sp">
 </TextView>

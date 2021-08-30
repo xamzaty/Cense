@@ -26,6 +26,10 @@
             </intent-filter>
         </activity>
         <activity
+            android:name=".view.LanguageActivity"
+            android:screenOrientation="portrait"
+            android:noHistory="true"/>
+        <activity
             android:name=".view.AuthorizationActivity"
             android:screenOrientation="portrait"
             android:noHistory="true"/>

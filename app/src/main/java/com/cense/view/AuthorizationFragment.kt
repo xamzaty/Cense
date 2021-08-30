@@ -32,6 +32,7 @@ class AuthorizationFragment : BaseFragment<FragmentAuthorizationBinding>(Fragmen
             buttonLogin.setOnClickListener {
                 if (editTextLogin.text.toString() == Constants.User.LOGIN && editTextPassword.text.toString() == Constants.User.PASSWORD){
                     startActivity(Intent(context, EnterActivity::class.java))
+                    activity?.finish()
                 } else {
                     showSnackbar("Incorrect login or password!")
                 }

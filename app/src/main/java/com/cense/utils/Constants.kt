@@ -121,13 +121,18 @@ object Constants {
     object User {
         const val LOGIN = "khamzat.yerzhanov"
         const val PASSWORD = "LuPwbpv9w9"
+        const val IS_ADMIN = true
         var PARENT_PASSWORD = ""
+    }
+
+    object Interface {
+        const val LANGUAGE = ""
     }
 
     object ProgressClass {
         const val PROGRESS_ENGLISH = 0
-        const val PROGRESS_MATH= 0
-        const val PROGRESS_SCIENCE= 0
-        const val PROGRESS_RANDOM= 0
+        const val PROGRESS_MATH = 0
+        const val PROGRESS_SCIENCE = 0
+        const val PROGRESS_RANDOM = 0
     }
 }

@@ -8,5 +8,31 @@
     <fragment
         android:id="@+id/enterFragment"
         android:name="com.cense.view.EnterFragment"
-        tools:layout="@layout/fragment_enter"/>
+        android:label="Choose"
+        tools:layout="@layout/fragment_enter">
+        <action
+            android:id="@+id/action_enterFragment_to_adminFragment"
+            app:destination="@id/adminFragment"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"/>
+        <action
+            android:id="@+id/action_enterFragment_to_appSettingsFragment"
+            app:destination="@id/appSettingsFragment"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"/>
+    </fragment>
+    <fragment
+        android:id="@+id/adminFragment"
+        android:name="com.cense.view.AdminFragment"
+        android:label="Admin"
+        tools:layout="@layout/fragment_admin"/>
+    <fragment
+        android:id="@+id/appSettingsFragment"
+        android:name="com.cense.view.AppSettingsFragment"
+        android:label="Settings"
+        tools:layout="@layout/fragment_app_settings"/>
 </navigation>

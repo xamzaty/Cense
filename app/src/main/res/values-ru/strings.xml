@@ -1,0 +1,120 @@
+<resources>
+
+    //App Name
+    <string name="app_name">Cense</string>
+
+    //Languages Select
+    <string name="languages_select_title">Выбрать Язык</string>
+    <string name="languages_select_english">English</string>
+    <string name="languages_select_russian">Русский</string>
+
+    //Login
+    <string name="login_login">Авторизация</string>
+    <string name="login_name">Имя</string>
+    <string name="login_password">Пароль</string>
+    <string name="login_repeat_password">Повторить Пароль</string>
+    <string name="login_phone">Телефон</string>
+    <string name="login_code">Код</string>
+    <string name="login_send_code">Отправить Код</string>
+    <string name="login_forgot_password">Забыли Пароль?</string>
+    <string name="login_dont_have_an_account">Нет Аккаунта?</string>
+    <string name="login_registration">Регистрация</string>
+
+    //Send Sms Dialog
+    <string name="send_sms_dialog_enter_sms">Ввести СМС-Код</string>
+    <string name="send_sms_dialog_send_new_sms_code">Отправить Новый СМС-Код</string>
+
+    //Login as a
+    <string name="start_learning">Начать обучение</string>
+    <string name="login_as_a_parent">Войти Как Родитель</string>
+
+    //App Settings
+    <string name="choose_language_spinner">Выбрать Язык</string>
+    <string name="dark_theme">Dark Theme</string>
+    <string-array name="choose_language">
+        <item>ENG</item>
+        <item>RUS</item>
+    </string-array>
+
+    //Admin
+    <string name="admin_enter_title">Введите Заголовок</string>
+    <string name="admin_message">Введите Сообщение</string>
+    <string name="admin_button_send_message">Отправить сообщение</string>
+    <string name="admin_description">У Вас имеется доступ к оповещению всех пользователей данного приложения. Пожалуйста, нажимайте на кнопку отправки один раз и не используйте слишком часто!</string>
+
+    //Bottom Navigation Menu
+    <string name="bottom_nav_study">Прогресс</string>
+    <string name="bottom_nav_classes">Классы</string>
+    <string name="bottom_nav_bonuses">Бонусы</string>
+    <string name="bottom_nav_settings">Настройки</string>
+
+    //Progress
+    <string name="user_weekly_progress">НЕДЕЛЬНЫЙ ПРОГРЕСС\n ПОЛЬЗОВАТЕЛЯ</string>
+    <string name="total_progress">ИТОГОВЫЙ ПРОГРЕСС</string>
+    <string name="correct_answers">ПРАВИЛЬНЫЕ ОТВЕТЫ</string>
+    <string name="memorizing_rate">РЕЙТИНГ ПАМЯТИ</string>
+
+    //Classes
+    <string name="classes_title">КЛАССЫ</string>
+    <string name="classes_english">Английский</string>
+    <string name="classes_math">Математика</string>
+    <string name="classes_science">Наука</string>
+    <string name="classes_history">История</string>
+    <string name="classes_random">Все Классы</string>
+    <string name="classes_biology">Биология</string>
+    <string name="classes_psychology">Психология</string>
+    <string name="learn_more_to_unlock_your_phone">Узнать больше\n Чтобы разблокировать телефон</string>
+    <string name="classes_percent">0%</string>
+
+    //Alert Dialog
+    <string name="alert_title">Выход</string>
+    <string name="alert_are_you_want_to_exit">Вы уверены, что хотите выйти?</string>
+    <string name="alert_ok">OK</string>
+    <string name="alert_cancel">Отмена</string>
+
+    //Settings
+    <string name="choose_time_spinner">Выбрать Время</string>
+    <string name="choose_class_spinner">Выбрать Класс</string>
+    <string name="number_of_questions">Количество Вопросов</string>
+    <string name="submit">Submit</string>
+
+    <string-array name="choose_time">
+        <item>10 минутs</item>
+        <item>20 минутs</item>
+        <item>30 минутs</item>
+        <item>40 минутs</item>
+        <item>50 минутs</item>
+        <item>60 минутs</item>
+    </string-array>
+
+    <string-array name="choose_class">
+        <item>Английский</item>
+        <item>Математика</item>
+        <item>Наука</item>
+        <item>Все Классы</item>
+    </string-array>
+
+    <string-array name="choose_number_of_questions">
+        <item>5 вопросов</item>
+        <item>10 вопросов</item>
+        <item>15 вопросов</item>
+        <item>20 вопросов</item>
+    </string-array>
+
+    <string name="settings_class">Класс</string>
+    <string name="settings_target_tag">Целевой Тег</string>
+    <string name="hint_timeout_select">ПОСТАВИТЬ ЭКРАННЫЙ ЛИМИТ</string>
+    <string name="timeout_description">Эти настройки позволяют Вам ограничить время, которое Ваши дети проводят в телефоне без перерыва. После того, как лимит будет достигнут, приложение предложит Вашему ребенку немного поучиться, чтобы получить больше экранного времени.</string>
+    <string name="send_next_sms_in">Отправить следуюший СМС-Код через</string>
+
+    //New Parent Password Dialog
+    <string name="new_password_description">Создайте четырехзначный пароль для входа в родительскую учетную запись, скрытую от ребенка</string>
+    <string name="new_parental_password_title">Введите Новый Пароль</string>
+    <string name="new_parental_password_repeat_password">Повторите Пароль</string>
+
+    //Parent Password Dialog
+    <string name="parental_password_title">Введите Пароль</string>
+
+    <string name="hint_password">*</string>
+
+</resources>

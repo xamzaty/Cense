@@ -18,10 +18,8 @@ class EnterActivity : BaseActivity<ActivityEnterBinding>(ActivityEnterBinding::i
         super.onCreate(savedInstanceState)
 
         AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO)
-        supportActionBar?.hide()
 
         navBarOptions()
-
     }
 
     private fun navBarOptions() {

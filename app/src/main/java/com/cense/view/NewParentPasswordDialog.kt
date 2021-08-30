@@ -9,7 +9,6 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.EditText
-import android.widget.LinearLayout
 import androidx.appcompat.widget.AppCompatTextView
 import androidx.appcompat.widget.LinearLayoutCompat
 import androidx.fragment.app.DialogFragment
@@ -17,6 +16,8 @@ import com.cense.R
 import com.cense.utils.Constants
 import com.cense.utils.FragmentExtensions.showSnackbar
 import com.cense.utils.FragmentExtensions.showToast
+import com.cense.utils.ViewExtensions.hideKeyboard
+import com.cense.utils.ViewExtensions.showKeyboard
 
 class NewParentPasswordDialog : DialogFragment() {
 
@@ -60,6 +61,7 @@ class NewParentPasswordDialog : DialogFragment() {
         repeatPasswordLayout = view.findViewById(R.id.layout_repeat_password)
 
         etNewNumberOne.requestFocus()
+        etNewNumberOne.showKeyboard()
 
         otpController()
     }
@@ -217,6 +219,7 @@ class NewParentPasswordDialog : DialogFragment() {
             intent.putExtra("parent", "parent")
             Constants.User.PARENT_PASSWORD = otpRepeatValue
             dialog?.dismiss()
+            etRepeatNumberFour.hideKeyboard()
             startActivity(intent, ActivityOptions.makeSceneTransitionAnimation(activity).toBundle())
         } else {
             showSnackbar("Your passwords don't match!")

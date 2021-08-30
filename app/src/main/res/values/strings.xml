@@ -3,18 +3,56 @@
     //App Name
     <string name="app_name">Cense</string>
 
+    //Languages Select
+    <string name="languages_select_title">Select Language</string>
+    <string name="languages_select_english">English</string>
+    <string name="languages_select_russian">Русский</string>
+
     //Login
     <string name="login_login">Login</string>
+    <string name="login_name">Name</string>
     <string name="login_password">Password</string>
+    <string name="login_repeat_password">Repeat Password</string>
     <string name="login_phone">Phone</string>
     <string name="login_code">Code</string>
     <string name="login_send_code">Send Code</string>
+    <string name="login_forgot_password">Forgot Password?</string>
+    <string name="login_dont_have_an_account">Don\'t have an account?</string>
+    <string name="login_registration">Registration</string>
+
+    //Send Sms Dialog
+    <string name="send_sms_dialog_enter_sms">Enter SMS-Code</string>
+    <string name="send_sms_dialog_send_new_sms_code">Send New SMS-Code</string>
+
+    //Login as a
+    <string name="start_learning">Start Learning</string>
+    <string name="login_as_a_parent">Login as a Parent</string>
+
+    //App Settings
+    <string name="choose_language_spinner">Choose Language</string>
+    <string name="dark_theme">Dark Theme</string>
+    <string-array name="choose_language">
+        <item>ENG</item>
+        <item>RUS</item>
+    </string-array>
+    
+    //Admin
+    <string name="admin_enter_title">Enter Title</string>
+    <string name="admin_message">Enter Message</string>
+    <string name="admin_button_send_message">Send Message</string>
+    <string name="admin_description">You have access to the notification of all users of this application. Please click the submit button once and don\'t use it too often!</string>
 
     //Bottom Navigation Menu
     <string name="bottom_nav_study">Study</string>
     <string name="bottom_nav_classes">Classes</string>
     <string name="bottom_nav_bonuses">Bonuses</string>
     <string name="bottom_nav_settings">Settings</string>
+
+    //Progress
+    <string name="user_weekly_progress">USER\'S\n WEEKLY PROGRESS</string>
+    <string name="total_progress">TOTAL PROGRESS</string>
+    <string name="correct_answers">CORRECT ANSWERS</string>
+    <string name="memorizing_rate">MEMORIZING RATE</string>
 
     //Classes
     <string name="classes_title">CLASSES</string>
@@ -26,6 +64,7 @@
     <string name="classes_biology">Biology</string>
     <string name="classes_psychology">Psychology</string>
     <string name="learn_more_to_unlock_your_phone">Learn More\n To unlock your phone</string>
+    <string name="classes_percent">0%</string>
 
     //Alert Dialog
     <string name="alert_title">Exit</string>
@@ -35,7 +74,10 @@
 
     //Settings
     <string name="choose_time_spinner">Choose Time</string>
+    <string name="choose_class_spinner">Choose Class</string>
+    <string name="number_of_questions">Number of Questions</string>
     <string name="submit">Submit</string>
+
     <string-array name="choose_time">
         <item>10 minutes</item>
         <item>20 minutes</item>
@@ -44,18 +86,21 @@
         <item>50 minutes</item>
         <item>60 minutes</item>
     </string-array>
+
     <string-array name="choose_class">
         <item>English</item>
         <item>Math</item>
         <item>Science</item>
         <item>Random</item>
     </string-array>
+
     <string-array name="choose_number_of_questions">
-        <item>5 answers</item>
-        <item>10 answers</item>
-        <item>15 answers</item>
-        <item>20 answers</item>
+        <item>5 questions</item>
+        <item>10 questions</item>
+        <item>15 questions</item>
+        <item>20 questions</item>
     </string-array>
+
     <string name="settings_class">Class</string>
     <string name="settings_target_tag">Target Tag</string>
     <string name="hint_timeout_select">SET THE SCREEN TIME LIMIT</string>
@@ -64,5 +109,11 @@
 
     //New Parent Password Dialog
     <string name="new_password_description">Create a four-character password to log into the parent\'s account hidden from the child</string>
+    <string name="new_parental_password_title">Enter New Password</string>
+    <string name="new_parental_password_repeat_password">Repeat Password</string>
+
+    //Parent Password Dialog
+    <string name="parental_password_title">Enter Password</string>
+    <string name="hint_password">*</string>
 
 </resources>

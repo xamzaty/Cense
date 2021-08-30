@@ -16,10 +16,17 @@
         <androidx.appcompat.widget.AppCompatTextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Enter SMS-code"
+            android:text="@string/send_sms_dialog_enter_sms"
             android:gravity="center"
             android:textSize="25sp"
-            android:textColor="@color/green_500"/>
+            android:textColor="@color/green_500"
+            android:paddingBottom="20dp"/>
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:src="@drawable/ic_icon_phone_verification"
+            android:paddingBottom="10dp"/>
 
     <androidx.appcompat.widget.LinearLayoutCompat
         android:layout_marginTop="10dp"
@@ -32,7 +39,7 @@
             android:id="@+id/edit_text_number_one"
             android:gravity="center"
             android:backgroundTint="@color/green_500"
-            android:hint="*"
+            android:hint="@string/hint_password"
             android:layout_width="30dp"
             android:layout_height="wrap_content"
             android:maxLength="1"
@@ -42,7 +49,7 @@
         <androidx.appcompat.widget.AppCompatEditText
             android:id="@+id/edit_text_number_two"
             android:layout_width="30dp"
-            android:hint="*"
+            android:hint="@string/hint_password"
             android:backgroundTint="@color/green_500"
             android:gravity="center"
             android:layout_height="wrap_content"
@@ -53,7 +60,7 @@
         <androidx.appcompat.widget.AppCompatEditText
             android:id="@+id/edit_text_number_three"
             android:layout_width="30dp"
-            android:hint="*"
+            android:hint="@string/hint_password"
             android:backgroundTint="@color/green_500"
             android:gravity="center"
             android:layout_height="wrap_content"
@@ -64,7 +71,7 @@
         <androidx.appcompat.widget.AppCompatEditText
             android:id="@+id/edit_text_number_four"
             android:layout_width="30dp"
-            android:hint="*"
+            android:hint="@string/hint_password"
             android:backgroundTint="@color/green_500"
             android:gravity="center"
             android:layout_height="wrap_content"
@@ -75,7 +82,7 @@
         <androidx.appcompat.widget.AppCompatEditText
             android:id="@+id/edit_text_number_five"
             android:layout_width="30dp"
-            android:hint="*"
+            android:hint="@string/hint_password"
             android:backgroundTint="@color/green_500"
             android:gravity="center"
             android:layout_height="wrap_content"
@@ -86,7 +93,7 @@
         <androidx.appcompat.widget.AppCompatEditText
             android:id="@+id/edit_text_number_six"
             android:layout_width="30dp"
-            android:hint="*"
+            android:hint="@string/hint_password"
             android:backgroundTint="@color/green_500"
             android:gravity="center"
             android:layout_height="wrap_content"
@@ -116,7 +123,7 @@
             android:gravity="center"
             android:backgroundTint="@color/green_500"
             android:layout_gravity="center"
-            android:text="Send new SMS"
+            android:text="@string/send_sms_dialog_send_new_sms_code"
             android:textColor="@color/white"
             android:textStyle="bold"
             android:textSize="20sp"

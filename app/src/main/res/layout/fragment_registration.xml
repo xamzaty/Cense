@@ -21,17 +21,53 @@
         android:orientation="vertical">
 
         <com.google.android.material.textfield.TextInputLayout
+            android:layout_marginTop="30dp"
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             app:endIconMode="clear_text">
 
-        <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/edit_text_login"
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edit_text_login"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="@string/login_login"
+                android:maxLines="1"
+                android:nextFocusDown="@id/edit_text_name"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_marginTop="30dp"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:hint="@string/login_login"
-            android:maxLines="1"/>
+            android:layout_height="wrap_content"
+            app:endIconMode="clear_text">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edit_text_name"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="@string/login_name"
+                android:inputType="textPersonName"
+                android:maxLines="1"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_marginTop="30dp"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:endIconMode="clear_text">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edit_text_phone"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="@string/login_phone"
+                android:inputType="phone"
+                android:maxLines="1"/>
 
         </com.google.android.material.textfield.TextInputLayout>
 
@@ -57,14 +93,14 @@
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            app:endIconMode="clear_text">
+            app:passwordToggleEnabled="true">
 
             <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/edit_text_phone"
+                android:id="@+id/edit_text_repeat_password"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:hint="@string/login_phone"
-                android:inputType="phone"
+                android:hint="@string/login_repeat_password"
+                android:inputType="textPassword"
                 android:maxLines="1"/>
 
         </com.google.android.material.textfield.TextInputLayout>

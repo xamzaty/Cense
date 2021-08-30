@@ -15,6 +15,13 @@
     <color name="gray">#F2F7F8</color>
     <color name="progress_bar_green">#82DA1F</color>
 
+    //Face Emoji
+    <color name="face_very_bad">#FF0000</color>
+    <color name="face_bad">#E14F4F</color>
+    <color name="face_neutral">#FFE500</color>
+    <color name="face_almost_good">#B3FF00</color>
+    <color name="face_good">#8AFF14</color>
+    <color name="face_great">#00FF0A</color>
 
     //Classes colors
     <color name="classes_english">#00C4FF</color>

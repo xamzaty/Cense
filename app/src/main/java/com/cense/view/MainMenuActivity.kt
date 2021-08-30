@@ -42,11 +42,12 @@ class MainMenuActivity : BaseActivity<ActivityMenuBinding>(ActivityMenuBinding::
         bottomNavView.setupWithNavController(navController)
         bottomNavView.menu.removeItem(R.id.fragment_bonuses)
 
-        val bundle :Bundle ?=intent.extras
-        val sessionId = bundle!!.getString("parent")
+        val bundle: Bundle? = intent.extras
+        val sessionId = bundle?.getString("parent")
 
-        if(sessionId != "parent") {
-            bottomNavView.menu.removeItem(R.id.fragment_settings)
+        when(sessionId) {
+            "parent" -> bottomNavView.menu.removeItem(R.id.fragment_classes)
+            else -> bottomNavView.menu.removeItem(R.id.fragment_settings)
         }
         hideBottomMenu()
     }

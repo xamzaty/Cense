@@ -4,21 +4,24 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:padding="20dp">
+    android:paddingTop="20dp"
+    android:paddingBottom="20dp"
+    android:paddingStart="30dp"
+    android:paddingEnd="30dp">
 
     <androidx.appcompat.widget.AppCompatTextView
         android:id="@+id/text_view_user_weekly_progress"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="USER'S\n WEEKLY PROGRESS"
+        android:text="@string/user_weekly_progress"
         android:gravity="center"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="10dp"
         android:textColor="@color/green_700"
         android:textStyle="bold"
-        android:textSize="25sp"
-        android:layout_marginTop="30dp"/>
+        android:textSize="25sp" />
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/layout_total_progress"
@@ -29,15 +32,17 @@
         android:layout_height="wrap_content"
         app:layout_constraintTop_toBottomOf="@id/text_view_user_weekly_progress"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent">
+        app:layout_constraintEnd_toEndOf="parent"
+        android:paddingBottom="20dp">
 
         <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/text_view_total_progress"
             app:layout_constraintStart_toStartOf="parent"
-            android:layout_marginStart="10dp"
+            android:layout_marginStart="20dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="TOTAL PROGRESS"
-            android:textColor="@color/black"
+            android:text="@string/total_progress"
+            android:textStyle="bold"
             android:textSize="18sp"
             app:layout_constraintBottom_toBottomOf="@+id/progress_bar_total_progress"
             app:layout_constraintTop_toTopOf="parent"
@@ -50,18 +55,17 @@
             android:progressDrawable="@drawable/circular_progress_bar"
             style="?android:attr/progressBarStyleHorizontal"
             android:max="100"
-            android:progress="65"
             android:indeterminate="false"
             android:background="@drawable/circle_shape"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/layout_progress"
             android:layout_marginEnd="15dp"/>
 
         <androidx.appcompat.widget.AppCompatTextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="0%"
+            android:text="@string/classes_percent"
             android:textColor="@color/green_500"
             android:textSize="15sp"
             app:layout_constraintTop_toTopOf="@id/progress_bar_total_progress"
@@ -70,44 +74,36 @@
             app:layout_constraintBottom_toBottomOf="@id/progress_bar_total_progress"
             android:textStyle="bold"/>
 
-        <HorizontalScrollView
-            android:layout_width="match_parent"
+        <include
+            android:id="@+id/layout_progress"
+            layout="@layout/item_progress"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@id/text_view_total_progress"
             app:layout_constraintTop_toBottomOf="@+id/progress_bar_total_progress"
-            tools:layout_editor_absoluteX="10dp"
-            android:layout_marginTop="10dp">
-        
-        <androidx.constraintlayout.widget.ConstraintLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:backgroundTint="@color/white"/>
-
-        </HorizontalScrollView>
+            tools:listitem="@layout/item_progress" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/layout_correct_answers"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="20dp"
         android:layout_width="match_parent"
-        android:layout_height="70dp"
+        android:layout_height="wrap_content"
         android:background="@drawable/shape_rounded_rectangle"
         app:layout_constraintTop_toBottomOf="@id/layout_total_progress"
         android:backgroundTint="@color/gray">
 
-        <androidx.constraintlayout.widget.ConstraintLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:background="?android:attr/selectableItemBackground"
-            android:focusable="true">
-
             <androidx.appcompat.widget.AppCompatTextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="CORRECT ANSWERS"
+                android:text="@string/correct_answers"
                 android:textAllCaps="true"
                 android:textSize="17sp"
-                android:layout_marginStart="40dp"
+                android:layout_marginStart="30dp"
                 android:textStyle="bold"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
@@ -120,7 +116,6 @@
                 android:progressDrawable="@drawable/circular_progress_bar"
                 style="?android:attr/progressBarStyleHorizontal"
                 android:max="100"
-                android:progress="65"
                 android:indeterminate="false"
                 android:background="@drawable/circle_shape"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -131,7 +126,7 @@
             <androidx.appcompat.widget.AppCompatTextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="0%"
+                android:text="@string/classes_percent"
                 android:textColor="@color/green_500"
                 android:textSize="15sp"
                 app:layout_constraintTop_toTopOf="@id/progress_bar_correct_answers"
@@ -151,19 +146,13 @@
             app:layout_constraintTop_toBottomOf="@id/layout_correct_answers"
             android:backgroundTint="@color/gray">
 
-            <androidx.constraintlayout.widget.ConstraintLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:background="?android:attr/selectableItemBackground"
-                android:focusable="true">
-
                 <androidx.appcompat.widget.AppCompatTextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="MEMORIZING RATE"
+                    android:text="@string/memorizing_rate"
                     android:textAllCaps="true"
                     android:textSize="17sp"
-                    android:layout_marginStart="40dp"
+                    android:layout_marginStart="30dp"
                     android:textStyle="bold"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
@@ -176,7 +165,6 @@
                     android:progressDrawable="@drawable/circular_progress_bar"
                     style="?android:attr/progressBarStyleHorizontal"
                     android:max="100"
-                    android:progress="65"
                     android:indeterminate="false"
                     android:background="@drawable/circle_shape"
                     app:layout_constraintEnd_toEndOf="parent"
@@ -187,7 +175,7 @@
                 <androidx.appcompat.widget.AppCompatTextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="0%"
+                    android:text="@string/classes_percent"
                     android:textColor="@color/green_500"
                     android:textSize="15sp"
                     app:layout_constraintTop_toTopOf="@id/progress_bar_memorizing_rate"
@@ -196,10 +184,6 @@
                     app:layout_constraintBottom_toBottomOf="@id/progress_bar_memorizing_rate"
                     android:textStyle="bold"/>
 
-            </androidx.constraintlayout.widget.ConstraintLayout>
-
-</androidx.constraintlayout.widget.ConstraintLayout>
-
-    </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

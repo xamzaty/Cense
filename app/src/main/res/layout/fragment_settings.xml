@@ -66,7 +66,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:hint="Choose Class"
+                android:hint="@string/choose_class_spinner"
                 android:inputType="none" />
 
         </com.google.android.material.textfield.TextInputLayout>
@@ -88,7 +88,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:hint="Number Of Questions"
+                android:hint="@string/number_of_questions"
                 android:inputType="none" />
 
         </com.google.android.material.textfield.TextInputLayout>

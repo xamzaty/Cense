@@ -3,22 +3,19 @@ package com.cense.view
 import android.app.ActivityOptions
 import android.content.Intent
 import android.os.Bundle
-import android.os.CountDownTimer
 import android.text.Editable
 import android.text.TextWatcher
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.Button
 import android.widget.EditText
-import android.widget.TextView
 import androidx.fragment.app.DialogFragment
-import androidx.fragment.app.viewModels
 import com.cense.R
 import com.cense.utils.Constants
 import com.cense.utils.FragmentExtensions.showSnackbar
 import com.cense.utils.FragmentExtensions.showToast
-import com.cense.viewmodel.SendSmsViewModel
+import com.cense.utils.ViewExtensions.hideKeyboard
+import com.cense.utils.ViewExtensions.showKeyboard
 
 class ParentPasswordDialog : DialogFragment() {
 
@@ -44,6 +41,7 @@ class ParentPasswordDialog : DialogFragment() {
         etNumberFour = view.findViewById(R.id.edit_text_number_four_password)
 
         etNumberOne.requestFocus()
+        etNumberOne.showKeyboard()
 
         otpController()
     }
@@ -127,14 +125,20 @@ class ParentPasswordDialog : DialogFragment() {
     private fun enterMainActivity() {
 
         val otpValue = etNumberOne.text.toString() + etNumberTwo.text + etNumberThree.text.toString() + etNumberFour.text.toString()
+        var counter = 0
 
         if(otpValue == Constants.User.PARENT_PASSWORD) {
             val intent = Intent(context, MainMenuActivity::class.java)
             intent.putExtra("parent", "parent")
+            etNumberFour.hideKeyboard()
+            counter = 0
             dialog?.dismiss()
             startActivity(intent, ActivityOptions.makeSceneTransitionAnimation(activity).toBundle())
-        } else {
+        } else if (otpValue != Constants.User.PARENT_PASSWORD && counter <= 2) {
             showSnackbar("Your password is not correct!")
+            counter + 1
+        } else if (otpValue != Constants.User.PARENT_PASSWORD && counter > 2) {
+            showSnackbar("Big Error!")
         }
     }
 }

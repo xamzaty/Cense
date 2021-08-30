@@ -17,8 +17,9 @@ import androidx.fragment.app.viewModels
 import com.cense.R
 import com.cense.utils.FragmentExtensions.showSnackbar
 import com.cense.utils.FragmentExtensions.showToast
+import com.cense.utils.ViewExtensions.hideKeyboard
+import com.cense.utils.ViewExtensions.showKeyboard
 import com.cense.viewmodel.SendSmsViewModel
-import dagger.hilt.android.AndroidEntryPoint
 
 class SendSmsDialog : DialogFragment() {
 
@@ -56,6 +57,7 @@ class SendSmsDialog : DialogFragment() {
         nextSmsButton = view.findViewById(R.id.button_send_sms)
 
         etNumberOne.requestFocus()
+        etNumberOne.showKeyboard()
 
         otpController()
         onClick()
@@ -177,6 +179,7 @@ class SendSmsDialog : DialogFragment() {
 
         if(otpValueInt == 111111) {
             startActivity(Intent(context, EnterActivity::class.java), ActivityOptions.makeSceneTransitionAnimation(activity).toBundle())
+            etNumberSix.hideKeyboard()
         } else {
             showSnackbar("SMS-code is not correct!")
         }
